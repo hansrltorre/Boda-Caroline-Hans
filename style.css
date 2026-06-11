@@ -98,7 +98,7 @@
 
 html{
   scroll-behavior:smooth;
-  font-size: 18px; /* Tamaño base aumentado */
+  font-size: 18px;
 }
 
 body{
@@ -155,7 +155,6 @@ h1,h2,h3{
   color:#7a5c3e;
 }
 
-/* AGREGADO: Para que la fecha tenga el mismo estilo */
 .overlay h2{
   font-size: 2.2rem;
   font-weight: 600;
@@ -164,7 +163,7 @@ h1,h2,h3{
 }
 
 .overlay p{
-  font-size:1.15rem;
+  font-size:1rem;
   color:#4d3c2a;
   margin:10px 0 0 0;
   letter-spacing:0.5px;
@@ -193,11 +192,19 @@ h1,h2,h3{
   transform:scale(1.04);
 }
 
-/* Countdown section - AGREGADO para unificar color */
 .countdown-section h2 {
   color: #7a5c3e;
   font-size: 2.2rem;
   font-weight: 600;
+}
+
+/* ACTUALIZADO: Countdown con mismo color que h1 */
+.countdown span {
+  color: #7a5c3e;
+}
+
+.countdown p {
+  color: #7a5c3e;
 }
 
 /* Agenda y tarjetas */
@@ -350,50 +357,5 @@ footer{
   color:#fff;
   font-family:'Cormorant Garamond',serif;
   font-size:1.2rem;
-  letter-spacing:1px;
-}
-
-.music-toggle {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 2100;
-  background: #fff;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(122,92,62,0.13);
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  color: #7a5c3e;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-.music-toggle:hover {
-  background: #f9f7f3;
-  color: #a88c6b;
-  box-shadow: 0 4px 16px rgba(122,92,62,0.18);
-}
-
-@media(max-width:900px){
-  html { font-size: 16px; }
-  .overlay h1{ font-size: 2.8rem; }
-  .overlay h2,
-  .countdown-section h2 { font-size: 1.8rem; }
-  .overlay h3{ font-size: 1.3rem; }
-  .agenda-section h2, .info-section h2, .story h2, .rsvp h2 { font-size: 2.2rem; }
-  .cards{
-    flex-direction:column;
-    align-items:center;
-  }
-  .card{
-    width:90%;
-    min-width:220px;
-  }
-  .overlay{
-    max-width:95vw;
-  }
+  letter-spacing:1
 }
