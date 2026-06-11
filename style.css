@@ -72,14 +72,14 @@
 
 .modal-content h2 {
   margin-bottom: 30px;
-  color: #7a5c3e;
+  color: #3f2a14;
   font-size: 40px;
 }
 .modal-section {
   margin-bottom: 22px;
 }
 .modal-section h3 {
-  color: #a88c6b;
+  color: #b9782d;
   margin-bottom: 6px;
   font-size: 1.2rem;
   font-family:'Montserrat',sans-serif;
@@ -98,15 +98,15 @@
 
 html{
   scroll-behavior:smooth;
+  font-size: 18px; /* Tamaño base aumentado */
 }
-
 
 body{
   font-family:'Montserrat',sans-serif;
   background:#f9f7f3;
   color:#2d2d2d;
+  line-height: 1.65;
 }
-
 
 h1,h2,h3{
   font-family:'Cormorant Garamond',serif;
@@ -114,13 +114,11 @@ h1,h2,h3{
   letter-spacing:1px;
 }
 
-
 .container{
   width:92%;
   max-width:950px;
   margin:auto;
 }
-
 
 .hero{
   min-height:90vh;
@@ -130,7 +128,6 @@ h1,h2,h3{
   align-items:center;
   justify-content:center;
 }
-
 
 .overlay{
   background:rgba(255,255,255,0.85);
@@ -146,28 +143,33 @@ h1,h2,h3{
   align-items:center;
 }
 
-
 .overlay h3{
-  font-size:1.5rem;
+  font-size:1.7rem;
   font-weight:400;
   margin-bottom:10px;
 }
 
-
 .overlay h1{
-  font-size:3.2rem;
+  font-size:4rem;
   margin:10px 0 0 0;
   color:#7a5c3e;
 }
 
+/* AGREGADO: Para que la fecha tenga el mismo estilo */
+.overlay h2{
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 20px 0 0 0;
+  color: #7a5c3e;
+}
 
 .overlay p{
-  font-size:1.1rem;
+  font-size:1.15rem;
   color:#4d3c2a;
   margin:10px 0 0 0;
   letter-spacing:0.5px;
+  line-height: 1.7;
 }
-
 
 .btn{
   margin-top:30px;
@@ -191,6 +193,12 @@ h1,h2,h3{
   transform:scale(1.04);
 }
 
+/* Countdown section - AGREGADO para unificar color */
+.countdown-section h2 {
+  color: #7a5c3e;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
 
 /* Agenda y tarjetas */
 .agenda-section, .info-section, .story, .rsvp {
@@ -200,7 +208,7 @@ h1,h2,h3{
 }
 
 .agenda-section h2, .info-section h2, .story h2, .rsvp h2 {
-  font-size:2.5rem;
+  font-size:2.8rem;
   margin-bottom:30px;
 }
 
@@ -243,6 +251,7 @@ h1,h2,h3{
   margin:18px auto;
   line-height:1.7;
   color:#4d3c2a;
+  font-size: 1.15rem;
 }
 
 .gallery{
@@ -334,7 +343,6 @@ h1,h2,h3{
   border-radius:20px;
 }
 
-
 footer{
   padding:30px 0 20px 0;
   text-align:center;
@@ -344,8 +352,6 @@ footer{
   font-size:1.2rem;
   letter-spacing:1px;
 }
-
-
 
 .music-toggle {
   position: fixed;
@@ -372,8 +378,13 @@ footer{
   box-shadow: 0 4px 16px rgba(122,92,62,0.18);
 }
 
-
 @media(max-width:900px){
+  html { font-size: 16px; }
+  .overlay h1{ font-size: 2.8rem; }
+  .overlay h2,
+  .countdown-section h2 { font-size: 1.8rem; }
+  .overlay h3{ font-size: 1.3rem; }
+  .agenda-section h2, .info-section h2, .story h2, .rsvp h2 { font-size: 2.2rem; }
   .cards{
     flex-direction:column;
     align-items:center;
